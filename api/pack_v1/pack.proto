@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pack_v1;
+
+service PackService{
+  rpc get(PackRequest) returns (PackResponse);
+}
+
+message PackRequest {
+  int32 id = 1;
+}
+
+message PackResponse {
+  string name = 1;
+  string description = 2;
+}
