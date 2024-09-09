@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package pack_v1;
 
+option go_package = "github.com/cerhlhgr/grpc_example/pkg/pack_v1;pack_v1";
+
 service PackService{
   rpc get(PackRequest) returns (PackResponse);
 }
